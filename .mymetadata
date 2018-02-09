@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="lgdjweb"
+  id="myeclipse.1457427771609"
+  context-root="/lgdjweb"
+  j2ee-spec="6.0"
+  archive="lgdjweb.war">
+  <attributes>
+    <attribute name="webrootdir" value="webapp" />
+  </attributes>
+</project-module>
+

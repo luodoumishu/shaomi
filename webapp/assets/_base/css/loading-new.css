@@ -1,0 +1,27 @@
+/*loading #B2D0F7*/
+.loading{
+	position:absolute;
+	left:45%;
+	top:40%;
+	border:3px solid red;
+	background:white url(images/block-bg.gif) repeat-x;
+	padding:10px;
+	font:bold 14px verdana,tahoma,helvetica; 
+	color:#003366;
+	z-index:99999;
+	width:180px;
+	text-align:center;
+}
+
+.loading01{
+	position:absolute;
+	left:45%;
+	top:40%;
+	border:3px solid B2D0F7;
+	background:white url(images/block-bg.gif) repeat-x;
+	padding:10px;
+	font:bold 14px verdana,tahoma,helvetica; 
+	color:#003366;
+	width:320px;
+	text-align:center;
+}

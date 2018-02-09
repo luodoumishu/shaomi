@@ -1,0 +1,282 @@
+　　三、字体属性
+
+　　（1）、font-family:"字体一"，"字体二".....
+
+　　　　　　如果font-family 定义了多种字体，浏览器会根据本机上的字体从头到尾来判断第一个在本机上有的字体便是显示出来的字体。
+
+　　（2）、font-size:大小取值
+
+　　　　　　xx-small:绝对字体的尺寸最小
+
+　　　　　　x-small:绝对字体尺寸较小
+
+　　　　　　small:绝对字体尺寸小
+
+　　　　　　medium:绝对字体尺寸默认小
+
+　　　　　　large:绝对字体尺寸大
+
+　　　　　　x-large:绝对字体尺寸较大
+
+　　　　　　xx-large:绝对字体尺寸最大
+
+　　　　　　larger:相对字体尺寸相对增大
+
+　　　　　　smaller:相对字体尺寸相对减小
+
+　　　　　　length:可采用百分比或长度值来确定字体的大小
+
+　　（3）、字体风格 font-style:样式的取值
+
+　　　　　　normal:正常字体 默认值
+
+　　　　　　italic:斜体显示
+
+　　　　　　oblique:属于中间状态，以偏斜体显示
+
+　　（4）、加粗字体 font-weight:字体粗细值
+
+　　　　　　normal:正常显示 默认值
+
+　　　　　　bold:加粗显示
+
+　　　　　　bolder:特粗显示
+
+　　　　　　lighter:特细显示
+
+　　　　　　number:用数值控制字体的粗细
+
+　　（5）、小写字母转为大写字母 font-variant :normal / small-caps
+
+　　　　　　使用font-variant可以将小写字母转化为大写字母
+
+　　　　　　normal:正常显示 默认值
+
+　　　　　　small-caps:将小写字母转化为大写字母
+
+　　（6）、字体的复合属性
+
+　　　　　　如 ： .h{font: bold italic "宋体"}
+
+　　四、颜色和背景属性
+
+　　（1）、颜色 Color:属性值
+			例子：color: #000000; 字体颜色
+
+　　　　　　属性值就是十六进制数或者颜色的英文字母
+
+　　（2）、背景颜色 background-color:颜色值
+
+　　（3）、背景图像 background-image:url();
+
+　　（4）、背景重复 background-repeat:取值
+
+　　　　　　　　　　no-repeat 不重复
+
+　　　　　　　　　　repeat 全屏重复
+
+　　　　　　　　　　repeat-x 水平方向平铺
+
+　　　　　　　　　　repeat-y 垂直方向平铺
+
+　　（5）、背景附件
+
+　　　　　　background-attachment :scroll / fixed
+
+　　　　　　　　　　scroll :背景随图像的滚动而滚动
+
+　　　　　　　　　　fixed : 背景的位置是固定不变的
+
+　　（6）、背景位置 background-position :位置取值
+			top left
+			top center
+			top right
+			center left
+			center center                   如果您仅规定了一个关键词，那么第二个值将是"center"。默认值：0% 0%。
+			center right
+			bottom left
+			bottom center
+			bottom right
+			
+											第一个值是水平位置，第二个值是垂直位置。
+			x% y% 							左上角是 0% 0%。右下角是 100% 100%。
+											如果您仅规定了一个值，另一个值将是 50%。	
+			 
+											第一个值是水平位置，第二个值是垂直位置。
+											左上角是 0 0。单位是像素 (0px 0px) 或任何其他的 CSS 单位。			
+			xpos ypos						如果您仅规定了一个值，另一个值将是50%。
+											您可以混合使用 % 和 position 值。
+　　（7）、背景复合属性 background： url() norepeat letf
+			例子：background: #F0F0F0 no-repeat;
+
+　　四、段落属性
+
+　　利用css控制段落主要包括以下几点：单词间隔 字符间隔 文字修饰 纵向排列 文本转换 文本排列 文本缩进和行高等
+
+　　（1）、英文单词间隔 word-spacing:取值
+
+　　（2）、中文字符间隔 letter-spacing:取值
+
+　　（3）、文字修饰 text-decration :取值
+
+　　　　　　取值： none 不修饰 默认值
+
+　　　　　　　　　 underline 下划线
+
+　　　　　　　　　　overline 上划线
+
+　　　　　　　　　　line-through 删除线
+
+　　　　　　　　　　blink 文字闪烁效果
+
+　　（4）、垂直对齐方式 vertical-align :排列取值
+
+　　　　　　baseline:浏览器默认对其方式
+
+　　　　　　sub:文字的下标
+
+　　　　　　super:文字的上标
+
+　　　　　　top:垂直靠上对齐
+
+　　　　　　text-top：使元素和上级元素的字体向上对齐
+
+　　　　　　middle:垂直居中对齐
+
+　　　　　　text-bottom:使元素和上级元素的字体向下对齐
+
+　　（5）、文本转换 text-transform:转换值
+
+　　　　　　none:使用原始值
+
+　　　　　　capitalize:每个元素的第一个字母大写
+
+　　　　　　uppercase:每个单词的所有字母都大写
+
+　　　　　　lowercase:每个单词的所有字母都小写
+
+　　（6）、水平对齐方式 text-align:排列取值
+
+　　　　　　left:左对齐
+
+　　　　　　right:右对齐
+
+　　　　　　center:中对齐
+
+　　　　　　justify:两端对齐
+
+　　（7）、文本缩进 text-indent:缩进值
+						text-indent: 10cm
+
+　　（8）、文本行高 line-height:行高值
+
+　　（9）、处理空白 white-space:值
+					normal 		默认。空白会被浏览器忽略。 
+					pre  		空白会被浏览器保留。其行为方式类似 HTML 中的 <pre> 标签。 
+					nowrap 		文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。 
+					pre-wrap 	保留空白符序列，但是正常地进行换行。 
+					pre-line 	合并空白符序列，但是保留换行符。 
+					inherit 	规定应该从父元素继承 white-space 属性的值。 
+
+　　　五、边距与填充属性
+
+　　（1）margin-top margin-left margin-bottom margin-right
+
+　　（2）、边距复合属性 margin:10px 30px 20px 10px
+
+　　（3）、填充属性 padding-top padding-left padding-right padding-bottom
+		例子：padding: 6px 3px 6px 3px;
+
+　　6、边框属性
+
+　　（1）、边框样式 border-style:样式值
+
+　　　　　　border-top-style:
+
+　　　　　　border-left-style:
+
+　　　　　　border-right-style:
+
+　　　　　　border-bottom-style:
+
+　　　　　　　　　　none:无边框 默认值
+
+　　　　　　　　　　dotted:点线边框
+
+　　　　　　　　　　dashed：虚线边框
+
+　　　　　　　　　　solid:实线边框
+
+　　　　　　　　　　double:双实线边框
+
+　　　　　　　　　　groove:边框具有主体感的沟槽
+
+　　　　　　　　　　ridge:边框成脊形
+
+　　　　　　　　　　inset:使整个边框凹陷
+
+　　　　　　　　　　outset:使整个边框崛起
+
+　　（2）、边框宽度：border-width:宽度值
+
+　　　　　　border-top-width:
+
+　　　　　　border-left-width:
+
+　　　　　　border-right-width:
+
+　　　　　　border-bottom-width:
+
+　　　　　　　　　　medium:默认宽度
+
+　　　　　　　　　　thin:小于默认宽度
+
+　　　　　　　　　　thick:大于默认宽度
+
+　　　　　　　　　　number:用数值表示
+
+　　（3）、边框颜色：border-color:
+
+　　　　　　border-top-color:
+
+　　　　　　border-left-color:
+
+　　　　　　border-right-color:
+
+　　　　　　bodrder-bottom-color:
+
+　　（4）、边框的复合属性：
+
+　　　　　　border:边框宽度 边框样式 属性颜色值
+			例子：border-right: 1px solid #000000;
+
+　　·　　　　border-top:
+
+　　　　　　border-left:
+
+　　　　　　border-right:
+
+　　　　　　border-bottom:
+
+　　七、列表属性：
+
+　　（1）、list-style-type:值
+
+　　　　　　disc：默认值 实心圈
+
+　　　　　　circle:空心圈
+
+　　　　　　square:实心方块
+
+　　　　　　decimal:阿拉伯数字
+
+　　　　　　lower-roman:小写罗马数字
+
+　　　　　　upper-roman:大写罗马数字
+
+　　　　　　lower-alpha:小写英文字母
+
+　　　　　　upper-alpha:大写英文字母
+
+　　　　　　none:不使用任何项目符号
+

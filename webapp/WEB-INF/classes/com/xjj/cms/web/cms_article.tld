@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>article</shortname> 
+
+
+	<tag>
+		<name>showContent</name>
+		<tagclass>com.xjj.cms.web.tld.article.ArticleShowContentTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>showAll</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>enclosure</name>
+		<tagclass>com.busi.cms.web.tld.article.ArticleEnclosureTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>linkUrl</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>	
+	</tag>
+	
+	
+	<tag>
+		<name>aboutLink</name>
+		<tagclass>com.busi.cms.web.tld.article.ArticleAboutLinkTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>titleLength</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>aboutNumber</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>				
+	</tag>
+	
+	<tag>
+		<name>nearLink</name>
+		<tagclass>com.busi.cms.web.tld.article.ArticleNearLinkTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>titleLength</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>imageList</name>
+		<tagclass>com.busi.cms.web.tld.article.ArticleImageListTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>linkUrl</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>	
+	</tag>	
+</taglib>

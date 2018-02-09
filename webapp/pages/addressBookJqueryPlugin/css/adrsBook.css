@@ -1,0 +1,251 @@
+.address-book{
+position:relative !important;
+float:right
+}
+
+.address-book:hover{
+background-color: #0F6099;
+color: #fff!important;
+cursor:pointer;
+}
+
+
+.book-txt-link{
+color:rgb(15, 96, 153);
+outline: 0;
+cursor: pointer;
+padding: 2px 4px 4px;
+text-decoration: none;
+border-radius: 3px;
+}
+
+div {
+	display: block;
+}
+
+html,body {
+	color: #222;
+	font-family: 'Microsoft Yahei', verdana;
+	font-size: 12px;
+	line-height: 19.99px;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.bookBody {
+	color: #555;
+	border-bottom: 1px solid #E1E1E1;
+	height: 90%;
+	zoom: 1;
+}
+
+.book-contacts-input {
+	width: 40%;
+}
+
+.book-full {
+	width: 100%;
+	height: 100%;
+}
+
+.book-contacts-border {
+	border: #CECECE 1px solid;
+	border-radius: 0 0 3px 3px;
+}
+
+.book-contacts-list {
+	width: 100%;
+	height: 80%;
+	overflow-x: hidden;
+}
+
+.bookContent {
+	padding: 0px 32px;
+	height: 100%;
+}
+
+.book-contacts-from {
+	height: 100%;
+	width: 45%;
+	float: left;
+}
+
+.book-contacts-listTitle {
+	margin-bottom: 4px;
+}
+
+
+.book-contacts-to {
+	height: 100%;
+	width: 45%;
+	float: right;
+}
+
+.book-contacts-attr {
+	position: absolute;
+	left: 50%;
+	top: 45%;
+}
+
+.book-contacts-selectedList {
+	height: 90%;
+	overflow: auto;
+	border: #CECECE 1px solid;
+	border-radius: 3px;
+}
+
+.book-contacts-selectedList .book-item {
+line-height:19.99px;
+overflow: auto;
+zoom: 1;
+margin: 0;
+padding: 2px 8px;
+}
+
+.book-contacts-selectedList .book-item .book-txt-link {
+color:#0F6099;
+line-height: normal;
+float: right;
+}
+
+
+.book-txt-link:hover{
+background-color: #0F6099;
+color: #fff!important;
+} 
+
+.book-contacts-selectedList .book-item:hover {
+background: #ffffe1;
+}
+
+.book-contacts-selectedList-name {
+float: left;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.book-contacts-listTitle .book-txt-link {
+line-height: normal;
+margin-top: -2px;
+color: #0F6099;
+}
+.book-contacts-to-removeAll {
+float: right;
+}
+
+.book-foot {
+	position: relative;
+	bottom: 1px;
+	height: 10%;
+	border-top: 1px solid #fff;
+	background: #FAFAFA;
+	zoom: 1;
+}
+
+.book-foot-btns {
+	position: absolute;
+	right: 0;
+	top: 12px;
+}
+
+.book-foot-btns .book-btn {
+	float: left;
+	margin-right: 8px;
+}
+
+.book-mainBtn {
+	color: #fff;
+}
+
+.book-btn {
+	line-height: normal;
+	position: relative;
+	font-size: 12px;
+	color: #555;
+	border-radius: 3px;
+	outline: 0;
+}
+
+.book-btn-text {
+	border-color: #459830;
+	background-color: #459830;
+	line-height: 25px;
+}
+
+.book-splitBtn-text .book-splitBtn-arr .book-btn-text {
+vertical-align: top;
+text-align: center;
+height: 26px;
+line-height: 25px;
+padding: 0 12px;
+border: 1px solid #999;
+border-radius: 3px;
+cursor: pointer;
+}
+
+.chooseAll{
+cursor:pointer;
+position:relative;
+float:right;
+}
+
+.k-treeview span.k-in {
+width:95%;
+}
+
+
+.text-overflow{
+display:block;
+white-space:nowrap;
+text-overflow:ellipsis;
+-o-text-overflow:ellipsis;
+overflow:hidden;
+}
+
+i.left-position {
+	position:relative;
+	color:black;
+	float:left;
+	padding-right: 4px;
+}
+
+.input-icon {
+  position: relative;
+}
+span.input-icon {
+  display: inline-block;
+}
+.input-icon > input {
+  padding-left: 24px;
+  padding-right: 6px;
+}
+.input-icon.input-icon-right > input {
+  padding-left: 6px;
+  padding-right: 24px;
+}
+.input-icon > [class*="icon-"] {
+  padding: 0 3px;
+  z-index: 2;
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  left: 3px;
+  line-height: 28px;
+  display: inline-block;
+  color: #909090;
+  font-size: 16px;
+}
+
+/*多选搜索框 删除图标错位修正 */
+span.k-delete{
+	font-size: 0px !important;
+	margin:0	!important ;
+	position:relative	!important;
+}
+/**修复IE8兼容模式下 item 删除图标偏移BUG*/
+.k-icon.k-delete{
+	top:0px;
+}

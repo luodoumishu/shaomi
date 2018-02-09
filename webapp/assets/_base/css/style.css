@@ -1,0 +1,24 @@
+html
+{
+    overflow-y:scroll;
+    font:75% 'Lucida Sans Unicode','Lucida Grande',arial,helvetica,sans-serif;
+    background:#F0F0F0 no-repeat fixed 0 800px;
+    font-family: 'Î¢ÈíÑÅºÚ';
+}
+.page
+{
+    width:940px;
+    margin:30px auto;
+    padding:30px;
+    background:#fff;
+    box-shadow: 1px 1px 7px 1px #999;
+}
+.offline-button:hover {
+    background: #e36028;
+}
+#grid{
+	margin-top: 7px;
+}
+.k-state-active{
+	font-family: 'Î¢ÈíÑÅºÚ';
+}

@@ -1,0 +1,45 @@
+/*��ũ��ݿ�ϵͳ��ʽ��*/
+* {margin: 0;padding: 0;}
+body {font-size: 12px;line-height: 1.8em;color: #; background:#5395c5 url(../images/rk001.jpg) no-repeat left top; padding:0px; font-family: , "Lucida Grande", Verdana, Lucida, Arial,	Helvetica, sans-serif;background-attachment: fixed;}
+a {color: #000;text-decoration: none;}
+a:hover {text-decoration: underline;}
+a.blue{ color:#0b3fb5}
+strong {color:#;}
+img {border: none;}
+ul {list-style: none;}
+td{ vertical-align:}
+
+.wy{ background:url(../images/daj002.jpg) repeat-x ; height:33px;}
+.xtname{ background:url(../images/daj101.gif) no-repeat ; height:116px ;letter-spacing:8px;}
+.xtname h3{ padding-top:8px;text-align:center; color:#000000; font-size:24px; font-weight:bold  }
+.buttondiv{ background:url(../images/daj105.gif) no-repeat; height:88px; }
+.maindiv{ margin:5px auto 0 auto; color:#222;  font-size:12px;}
+.maindiv td{ padding-top:10px; padding-left:10px}
+.titlediv{ text-align:right}
+.inputdiv{ background:#e1dbc9; width:100px;  border:solid #74653f; padding-left:5px; border-width:1px 0 0 1px; height:24px; line-height:26px; font-size:14px; font-weight:bold}
+.maindiv td.logonbot{ color:#7e9488; padding-top:20px; text-align:center}
+
+.logindiv{ margin-top:0px}
+.logindiv td{ padding:10px 2px 0px 2px}
+.login{ background:#fff url(../images/rk005.jpg) no-repeat bottom ; }
+.nametext{ background:#fffcdc; border:1px solid #bbb5ac; padding:6px; font-size:14px ; color:#; width:80%}
+.password{ background:#ebf4ff; border:1px solid #88adc8; padding:6px; font-size:14px ; color:#; width:80%}
+.fontcolor{ color:#999}
+.logon{ background:url(../images/logon.jpg) no-repeat ; display:block; width:133px; height:31px; line-height:29px; text-align:center; font-weight:bold; color:#fff}
+.logon:hover{ background:url(../images/logon_2.jpg) no-repeat ; text-decoration:none  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

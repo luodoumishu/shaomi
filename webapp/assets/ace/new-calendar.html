@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Full Calendar - Ace Admin</title>
+
+		<meta name="description" content="with draggable and editable events" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- basic styles -->
+
+		<link href="../ace/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="../ace/css/bootstrap-responsive.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../ace/css/font-awesome.min.css" />
+
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="../ace/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+
+		<!-- page specific plugin styles -->
+
+		<link rel="stylesheet" href="../ace/css/fullcalendar.css" />
+
+		<!-- fonts -->
+
+		<link rel="stylesheet" href="../ace/css/ace-fonts.css" />
+
+		<!-- ace styles -->
+
+		<link rel="stylesheet" href="../ace/css/ace.min.css" />
+		<link rel="stylesheet" href="../ace/css/ace-responsive.min.css" />
+		<link rel="stylesheet" href="../ace/css/ace-skins.min.css" />
+
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="../ace/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+
+		<script src="../ace/js/ace-extra.min.js"></script>
+	</head>
+
+	<body>
+		<div class="main-container container-fluid">
+			<div class="main-content" style="margin-left: 0px;">
+				<div class="page-content">
+					<div class="row-fluid">
+						<div class="span12">
+							<div class="tabbable">
+								<ul class="nav nav-tabs" id="myTab">
+									<li >
+										<a data-toggle="tab" href="#home">
+											<i class="green icon-list bigger-110"></i>
+											列表
+										</a>
+									</li>
+
+									<li class="active">
+										<a data-toggle="tab" href="#profile">
+											<i class="green icon-time bigger-110"></i>
+											日历
+										</a>
+									</li>
+
+									
+								</ul>
+
+								<div class="tab-content">
+									<div id="home" class="tab-pane ">
+										<div class="row-fluid">
+											<table id="sample-table-2" class="table table-striped table-bordered table-hover">
+												<thead>
+													<tr>
+														<th>申请类型</th>
+														<th class="hidden-phone">
+															<i class="icon-time bigger-110 hidden-phone"></i>
+															请假时间
+														</th>
+														<th class="hidden-480">请假天数</th>
+													</tr>
+												</thead>
+			
+												<tbody>
+													<tr>
+														<td>
+															事假申请
+														</td>
+														<td class="hidden-phone">2013-12-16至2013-12-18</td>
+														<td class="hidden-480">3天</td>
+													</tr>
+			
+			
+													<tr>
+														<td>
+															事假申请
+														</td>
+														<td class="hidden-phone">2013-12-16至2013-12-18</td>
+														<td class="hidden-480">3天</td>
+													</tr>
+			
+													<tr>
+														<td>
+															事假申请
+														</td>
+														<td class="hidden-phone">2013-12-16至2013-12-18</td>
+														<td class="hidden-480">3天</td>
+													</tr>
+			
+													<tr>
+														<td>
+															事假申请
+														</td>
+														<td class="hidden-phone">2013-12-16至2013-12-18</td>
+														<td class="hidden-480">3天</td>
+													</tr>
+			
+													<tr>
+														<td>
+															事假申请
+														</td>
+														<td class="hidden-phone">2013-12-16至2013-12-18</td>
+														<td class="hidden-480">3天</td>
+													</tr>
+			
+													<tr>
+														<td>
+															事假申请
+														</td>
+														<td class="hidden-phone">2013-12-16至2013-12-18</td>
+														<td class="hidden-480">3天</td>
+													</tr>
+			
+													<tr>
+														<td>
+															事假申请
+														</td>
+														<td class="hidden-phone">2013-12-16至2013-12-18</td>
+														<td class="hidden-480">3天</td>
+													</tr>
+			
+													<tr>
+														<td>
+															事假申请
+														</td>
+														<td class="hidden-phone">2013-12-16至2013-12-18</td>
+														<td class="hidden-480">3天</td>
+													</tr>
+			
+													<tr>
+														<td>
+															事假申请
+														</td>
+														<td class="hidden-phone">2013-12-16至2013-12-18</td>
+														<td class="hidden-480">3天</td>
+													</tr>
+			
+													<tr>
+														<td>
+															事假申请
+														</td>
+														<td class="hidden-phone">2013-12-16至2013-12-18</td>
+														<td class="hidden-480">3天</td>
+													</tr>
+			
+													<tr>
+														<td>
+															事假申请
+														</td>
+														<td class="hidden-phone">2013-12-16至2013-12-18</td>
+														<td class="hidden-480">3天</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div id="profile" class="tab-pane in active">
+										<!-- PAGE CONTENT BEGINS -->
+										<div id="calendar"></div>
+										<!-- PAGE CONTENT ENDS -->
+									</div>
+								</div>
+							</div>
+						</div><!-- /.span -->
+					</div><!-- /.row-fluid -->
+				</div><!-- /.page-content -->
+			</div><!-- /.main-content -->
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='../ace/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+		</script>
+
+
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='../ace/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="../ace/js/bootstrap.min.js"></script>
+
+		<!-- page specific plugin scripts -->
+
+		<script src="../ace/js/jquery.dataTables.min.js"></script>
+		<script src="../ace/js/jquery.dataTables.bootstrap.js"></script>
+
+		<!-- ace scripts -->
+
+		<!-- page specific plugin scripts -->
+
+		<script src="../ace/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="../ace/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="../ace/js/fullcalendar.min.js"></script>
+		<script src="../ace/js/bootbox.min.js"></script>
+
+		<!-- ace scripts -->
+
+		<script src="../ace/js/ace-elements.min.js"></script>
+		<script src="../ace/js/ace.min.js"></script>
+
+		<!-- inline scripts related to this page -->
+
+		<script type="text/javascript">
+			jQuery(function($) {
+				var oTable1 = $('#sample-table-2').dataTable( {
+				"aoColumns": [
+			      null, null,null
+				] } );
+				
+				
+				$('table th input:checkbox').on('click' , function(){
+					var that = this;
+					$(this).closest('table').find('tr > td:first-child input:checkbox')
+					.each(function(){
+						this.checked = that.checked;
+						$(this).closest('tr').toggleClass('selected');
+					});
+						
+				});
+			
+			
+				$('[data-rel="tooltip"]').tooltip({placement: tooltip_placement});
+				function tooltip_placement(context, source) {
+					var $source = $(source);
+					var $parent = $source.closest('table')
+					var off1 = $parent.offset();
+					var w1 = $parent.width();
+			
+					var off2 = $source.offset();
+					var w2 = $source.width();
+			
+					if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) return 'right';
+					return 'left';
+				}
+			
+			/* initialize the external events
+				-----------------------------------------------------------------*/
+			
+				$('#external-events div.external-event').each(function() {
+			
+					// create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+					// it doesn't need to have a start or end
+					var eventObject = {
+						title: $.trim($(this).text()) // use the element's text as the event title
+					};
+			
+					// store the Event Object in the DOM element so we can get to it later
+					$(this).data('eventObject', eventObject);
+			
+					// make the event draggable using jQuery UI
+					$(this).draggable({
+						zIndex: 999,
+						revert: true,      // will cause the event to go back to its
+						revertDuration: 0  //  original position after the drag
+					});
+					
+				});
+			
+			
+			
+			
+				/* initialize the calendar
+				-----------------------------------------------------------------*/
+			
+				var date = new Date();
+				var d = date.getDate();
+				var m = date.getMonth();
+				var y = date.getFullYear();
+			
+				
+				var calendar = $('#calendar').fullCalendar({
+					 buttonText: {
+						prev: '<i class="icon-chevron-left"></i>',
+						next: '<i class="icon-chevron-right"></i>'
+					},
+				
+					header: {
+						left: 'prev,next today',
+						center: 'title',
+						right: 'month'
+					},
+					events: [
+					{
+						title: '探亲假',
+						start: new Date(y, m, 2),
+						end: new Date(y, m, 5),
+						className: 'label-important'
+					},
+					{
+						title: '事假',
+						start: new Date(y, m, 24),
+						end: new Date(y, m, 27),
+						className: 'label-success'
+					},
+					{
+						title: '年休假',
+						start: new Date(y, m, 10),
+						end: new Date(y, m, 14),
+						className: 'label-success'
+					},
+					{
+						title: '年休假',
+						start: new Date(y, m, 17),
+						end: new Date(y, m, 21),
+						className: 'label-pink'
+					}]
+					,
+					editable: true,
+					droppable: true, // this allows things to be dropped onto the calendar !!!
+					drop: function(date, allDay) { // this function is called when something is dropped
+					
+						// retrieve the dropped element's stored Event Object
+						var originalEventObject = $(this).data('eventObject');
+						var $extraEventClass = $(this).attr('data-class');
+						
+						
+						// we need to copy it, so that multiple events don't have a reference to the same object
+						var copiedEventObject = $.extend({}, originalEventObject);
+						
+						// assign it the date that was reported
+						copiedEventObject.start = date;
+						copiedEventObject.allDay = allDay;
+						if($extraEventClass) copiedEventObject['className'] = [$extraEventClass];
+						
+						// render the event on the calendar
+						// the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+						$('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+						
+						// is the "remove after drop" checkbox checked?
+						if ($('#drop-remove').is(':checked')) {
+							// if so, remove the element from the "Draggable Events" list
+							$(this).remove();
+						}
+						
+					}
+					,
+					selectable: true,
+					selectHelper: true,
+					select: function(start, end, allDay) {
+						
+						bootbox.prompt("New Event Title:", function(title) {
+							if (title !== null) {
+								calendar.fullCalendar('renderEvent',
+									{
+										title: title,
+										start: start,
+										end: end,
+										allDay: allDay
+									},
+									true // make the event "stick"
+								);
+							}
+						});
+						
+			
+						calendar.fullCalendar('unselect');
+						
+					}
+					,
+					eventClick: function(calEvent, jsEvent, view) {
+			
+						var form = $("<form class='form-inline'><label>Change event name &nbsp;</label></form>");
+						form.append("<input autocomplete=off type=text value='" + calEvent.title + "' /> ");
+						form.append("<button type='submit' class='btn btn-small btn-success'><i class='icon-ok'></i> Save</button>");
+						
+						var div = bootbox.dialog(form,
+							[
+							{
+								"label" : "<i class='icon-trash'></i> Delete Event",
+								"class" : "btn-small btn-danger",
+								"callback": function() {
+									calendar.fullCalendar('removeEvents' , function(ev){
+										return (ev._id == calEvent._id);
+									})
+								}
+							}
+							,
+							{
+								"label" : "<i class='icon-remove'></i> Close",
+								"class" : "btn-small"
+							}
+							]
+							,
+							{
+								// prompts need a few extra options
+								"onEscape": function(){div.modal("hide");}
+							}
+						);
+						
+						form.on('submit', function(){
+							calEvent.title = form.find("input[type=text]").val();
+							calendar.fullCalendar('updateEvent', calEvent);
+							div.modal("hide");
+							return false;
+						});
+						
+					
+						//console.log(calEvent.id);
+						//console.log(jsEvent);
+						//console.log(view);
+			
+						// change the border color just for fun
+						//$(this).css('border-color', 'red');
+			
+					}
+					
+				});
+			})
+		</script>
+	</body>
+</html>

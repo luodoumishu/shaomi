@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>vote</shortname> 
+
+   <tag>
+        <name>main</name>
+        <tagclass>com.xjj.cms.web.tld.vote.VoteMainTld</tagclass>
+        <bodycontent>jsp</bodycontent>
+        <description>单个投票主题的详细展示，供投票操作（显示主记录）</description>
+   </tag>
+
+	<tag>
+		<name>item</name>
+		<tagclass>com.xjj.cms.web.tld.vote.VoteItemTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description>投票项列表显示</description>
+		<attribute>
+			<name>forShowResult</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>是否用于显示投票结果,默认为false</description>
+		</attribute>
+	</tag>	
+	
+	<tag>
+		<name>detail</name>
+		<tagclass>com.xjj.cms.web.tld.vote.VoteDetailTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description>投票明细列表显示</description>
+	</tag>
+		
+	<tag>
+		<name>detailResult</name>
+		<tagclass>com.busi.cms.web.tld.vote.VoteDetailResultTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description>投票明细列表显示(用于显示投票结果)</description>
+	</tag>		
+		
+	
+	
+	<tag>
+		<name>list</name>
+		<tagclass>com.xjj.cms.web.tld.vote.VoteListTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description>投票主题列表</description>
+		<attribute>
+			<name>titleLength</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>投票标题长度</description>
+		</attribute>
+		<attribute>
+			<name>styleClass</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>显示样式</description>			
+		</attribute>
+		<attribute>
+			<name>pageSize</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>每页显示记录条数</description>			
+		</attribute>
+		<attribute>
+			<name>pageNo</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>第几页</description>			
+		</attribute>		
+	</tag>	
+	
+	
+
+	
+</taglib>

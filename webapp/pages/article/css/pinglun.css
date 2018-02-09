@@ -1,0 +1,585 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{
+	margin:0;
+	padding:0;
+	font-family:"微软雅黑";
+	}
+ul,li,p,h1{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+a,a:visited{
+	text-decoration:none;
+	color:#000;
+	}
+a:hover{
+	color:#dc0c07;
+	}
+img{
+	border:none;
+	}
+.xjj_logo{
+	height:180px;
+	background:#2f6699;
+	}
+.xjj_top{
+	height:130px;
+	width:1000px;
+	margin:0 auto;
+	}
+.xjj_login{
+	float:right;
+	width:250px;
+	margin-top:40px;
+	}
+.xjj_loglt{
+	float:left;
+	margin:15px 0 0 0;
+	}
+.xjj_ptdl{
+	width:120px;
+	height:30px;
+	border-radius:4px;
+	background:#ddeffd;
+	text-align:center;
+	line-height:30px;
+	font-size:14px;
+	margin:0 auto;
+	}
+.xjj_time{
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	margin-top:15px;
+	}
+.xjj_nav{
+	width:1000px;
+	height:50px;
+	margin:0 auto;
+	position:relative;
+	z-index:1000;
+	}
+.xjj_navtcnr{
+	height:442px;
+	position:absolute;
+	width:998px;
+	border:2px solid #044179;
+	top:50px;
+	z-index:100;
+	background:#fff;
+	}
+.xjj_ldjs{
+	width:180px;
+	height:422px;
+	float:left;
+	font-size:14px;
+	background:url(../images/xjj_line.jpg) no-repeat right -8px;
+	padding:20px 0 0 20px;
+	}
+.xjj_ldjs dt{
+	width:80px;
+	text-align:right;
+	float:left;
+	height:40px;
+	}
+.xjj_ldjs dd{
+	height:40px;
+	}
+.xjj_ldjs h2,.xjj_gzzn h2,.xjj_fgwj h2{
+	font-size:18px;
+	font-weight:normal;
+	color:#06509d;
+	}
+.xjj_gzzn{
+	height:422px;
+	float:left;
+	padding:20px 0 0 20px;
+	background:url(../images/xjj_line.jpg) no-repeat right -8px;
+	}
+.xjj_gzzn ul li,.xjj_fgwj ul li{
+	line-height:30px;
+	font-size:14px;
+	background:url(../images/xjj_lid.jpg) no-repeat 0 13px;
+	padding-left:15px;
+	}
+.xjj_gzzn ul li a,.xjj_gzzn ul li a:visited,.xjj_fgwj ul li a,.xjj_fgwj ul li a:visited{
+	color:#000;
+	text-decoration:none;
+	}
+.xjj_gzzn ul li a:hover,.xjj_gzzn ul li a:hover,.xjj_fgwj ul li a:hover{
+	color:#dc0c07;
+	text-decoration:none;
+	}
+.xjj_fgwj{
+	width:280px;
+	height:422px;
+	float:right;
+	padding:20px 0 0 20px;
+	}
+.xjj_navleft{
+	float:left;
+	width:670px;
+	}
+.xjj_navleft ul{}	
+.xjj_navleft ul li{
+	float:left;
+	line-height:50px;
+
+	font-size:22px;
+	color:#b4dcfc;
+	}
+.xjj_navleft ul li a,.xjj_navleft ul li a:visited{
+	color:#b4dcfc;
+	text-decoration:none;
+	display:block;
+	padding:0 20px;
+	}
+.xjj_navleft ul li a:hover{
+	text-decoration:none;
+	border-top:2px solid #044179;
+	border-left:2px solid #044179;
+	border-right:2px solid #044179;
+	background:#fff;
+	color:#0656a1;
+	position:relative;
+	z-index:1000;
+	border-radius:6px 6px 0 0;
+	margin-bottom: -5px;
+	}
+.xjj_navleft ul li.hove{
+	border-top:2px solid #044179;
+	border-left:2px solid #044179;
+	border-right:2px solid #044179;
+	background:#fff;
+	color:#0656a1;
+	position:relative;
+	z-index:1000;
+	border-radius:6px 6px 0 0;
+	padding:0 20px;
+	}	
+.xjj_navserch{
+	float:right;
+	width:250px;
+	position:relative;
+	margin-top:5px;
+	}
+.xjj_navserch input{
+	width:240px;
+	height:35px;
+	border:none;
+	background:#ddeffd;
+	border-radius:20px;
+	padding-left:10px;
+	}
+.xjj_navserch span{
+	position:absolute;
+	top:5px;
+	right:10px;
+	}
+.xjj_zcon{
+	height:446px;
+	background:url(../images/xjj_conbg.jpg);
+	
+	}
+.xjj_zhdpc{
+	width:1000px;
+	height:447px;
+	margin:0 auto;
+	background:url(../images/xjj_banbg.jpg) no-repeat;
+	}
+.xjj_hdpbox{
+	width:500px;
+	float:left;
+	}
+.xjj_hdp{
+	width:480px;
+	height:330px;
+	margin-top:35px;
+	}
+.xjj_ttnews{
+	float:left;
+	padding-top:20px;
+	color:#003566;
+	width:490px;
+	}
+.xjj_ttnews a,.xjj_ttnews a:visited{
+	color:#003566;
+	text-decoration:none;
+	}
+.xjj_ttnews a:hover{
+	color:#dc0c07;
+	}
+.xjj_ttnews h1{
+	padding:15px;
+	}
+.xjj_ttnews p{
+	font-size:12px;
+	line-height:25px;
+	border-bottom:1px dashed #2f6699;
+	padding-bottom:10px;
+	}
+.xjj_newlist ul{
+	padding-top:10px;
+	}
+.xjj_newlist ul li{
+	line-height:28px;
+	background:url(../images/xjj_sq.jpg) no-repeat 0 10px;
+	padding-left:15px;
+	font-size:16px;
+	}
+.xjj_hdpxz{
+	height:30px;
+	margin-top:10px;
+	}
+.xjj_hdpxz ul{
+	width:150px;
+	margin:0 auto;
+	}
+.xjj_hdpxz ul li{
+	width:12px;
+	height:12px;
+	float:left;
+	margin:10px;
+	background:url(../images/xjj_hdpho.png) no-repeat;
+	}
+.xjj_hdpxz ul li.hove{
+	background:url(../images/xjj_hdpdi.png) no-repeat;
+	}
+.xjj_copyright{
+	background:url(../images/xjj_botbg.jpg);
+	}
+.xjj_link{
+	width:1000px;
+	height:120px;
+	margin:0 auto;
+	border-bottom:1px dashed #d1d1d1;
+	}
+.xjj_link ul{
+	padding:20px 20px 0 100px;
+	}
+.xjj_link ul li{
+	float:left;
+	margin:20px;
+	}
+.xjj_sele{
+	width:220px;
+	height:28px;
+	background:#c7edcc;
+	border:1px solid #696969;
+	}
+.xjj_cobde{
+	width:1000px;
+	margin:0 auto;
+	text-align:center;
+	line-height:25px;
+	font-size:12px;
+	padding:20px 0;
+	}
+/*列表*/
+.xjj_lisbox{
+	background:url(../images/xjj_lisbg.jpg);
+	}
+.xjj_lispath{
+	height:57px;
+	width:1000px;
+	margin:2px auto;
+	line-height:57px;
+	font-size:14px;
+	color:#666;
+	}
+.xjj_lispath img{
+	vertical-align:-3px;
+	}
+.xjj_lisboxd{
+	width:970px;
+	border:1px solid #d1d1d1;
+	margin:0 auto;
+	background:#fff;
+	padding:30px 15px 30px 15px;
+	}
+.xjj_lisleft{
+	width:245px;
+	float:left;
+	}
+.xjj_lisltit{
+	height:40px;
+	background:url(../images/xjj_listite.jpg) no-repeat;
+	line-height:40px;
+	padding-left:30px;
+	font-size:16px;
+	}
+.xjj_lislnav{
+	padding:10px 0;
+	}
+.xjj_lislnav ul li{
+	margin-bottom:1px;
+	height:37px;
+	line-height:37px;
+	background:#f1f1f1;
+	text-align:center;
+	}
+.xjj_lislnav ul li a,.xjj_lislnav ul li a:visited{
+	text-decoration:none;
+	display:block;
+	height:37px;
+	color:#000;
+	}
+.xjj_lislnav ul li a:hover{
+	color:#dc0c07;
+	background:#cde7ff;
+	}
+.xjj_lisright{
+	width:680px;
+	float:right;
+	}
+.xjj_lisrtite{
+	height:37px;
+	border-bottom:1px solid #a5a5a5;
+	line-height:37px;
+	}
+.xjj_lisrtd{
+	width:300px;
+	float:left;
+	}
+.xjj_lisrsearch{
+	width:220px;
+	float:right;
+	}
+.xjj_lisrseipt{
+	width:150px;
+	border:1px solid #ccc;
+	height:22px;
+	border-radius:4px;
+	}
+.xjj_lisrsearch img{
+	vertical-align:-8px;
+	}
+.xjj_lisrtlie{
+	padding:10px 0;
+	}
+.xjj_lisrtlie ul li{
+	background:url(../images/xjj_lid.jpg) no-repeat 0 13px;
+	padding-left:15px;
+	line-height:32px;
+	font-size:14px;	
+	}
+.xjj_lispage{
+	height:30px;
+	background:#f1f1f1;
+	margin-top:10px;
+	text-align:center;
+	line-height:30px;
+	}
+/*列表单页*/
+.xjj_lisrdy dl{
+	margin:20px;
+	}
+.xjj_lisrdy dt{
+	padding:10px;
+	width:100px;
+	float:left;
+	color:#2f6699;
+	text-align:right;
+	}
+.xjj_lisrdy dd{
+	padding:10px 0;
+	}
+.xjj_neirbox{
+	margin-top: -20px;
+	}
+.xjj_neirbox h1{
+	text-align:center;
+	margin:3px 0;
+	font-size:22px;
+	width: auto;
+	}
+.xjj_nerzz{
+	height:30px;
+	background:#f1f1f1;
+	line-height:30px;
+	text-align:center;
+	font-size:12px;
+	color:#666;
+	margin:20px 0;
+	}
+.xjj_nerzz span{
+	color:#2f6699;
+	margin:0 8px;
+	}
+.xjj_nener{
+	line-height:35px;
+	font-size:16px;
+	padding:0 15px;
+	}
+	
+/*=========幻灯片一--========*/
+.mF_classicHC .pic{border:1px solid #fff;overflow:hidden;}
+.mF_classicHC .pic li{position:absolute;left:1px;top:1px;}
+.mF_classicHC .txt li{position:absolute;left:0;background:#fff;overflow:hidden;}
+.mF_classicHC .txt li a{display:block;color:#333;text-align:center;font-size:12px;font-weight:bold;text-decoration:none;}/*文字样式*/
+.mF_classicHC .num,.mF_classicHC .num-bg{height:19px;position:absolute;z-index:3;right:0;bottom:31px;color:#fff;}/*按钮样式*/
+.mF_classicHC .num-bg{width:100%;background:url(../images/bg.png) right bottom no-repeat;_height:16px;_background:0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg.png', sizingMethod='scale');}
+.mF_classicHC .num-bg li{position:absolute;}
+.mF_classicHC .num li{float:left;width:26px;height:16px;line-height:16px;padding-top:3px;text-align:center;cursor:pointer;position:relative;}
+.mF_classicHC .num li span{position:absolute;top:3px;left:0;width:1px;height:16px;overflow:hidden;background:#DADADA;}
+.mF_classicHC .num li.current,.mF_classicHC .num li.hover{background:url(../images/bd.gif) left top no-repeat;}/*当前/悬停按钮样式*/
+.mF_classicHC .num li.hover{background-position:right bottom;}
+	
+	
+	#slider-wrapper {
+    
+    width:480px;
+    height:330px;
+    margin:0 auto;
+}
+/* #slider {
+	position:relative;
+    width:481px;
+    height:330px;
+}
+#slider a img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+	width:480px;
+	height:330px;
+	}
+#slider a {
+	border:0;
+	display:block;
+}
+.nivo-controlNav {
+	position:absolute;
+	left:188px;
+	bottom:-42px;
+}
+.nivo-controlNav a {
+	display:block;
+	width:24px;
+	height:24px;
+	background:url(../images/xjj_hdpho2.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+.nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(../images/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+a.nivo-prevNav {
+	left:15px;
+}
+
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a { 
+    color:#efe9d1;
+    text-decoration:underline;
+}
+
+====================
+=== Other Styles ===
+====================
+.clear {
+	clear:both;
+}
+
+
+
+
+.nivoSlider {
+	position:relative;
+	
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	
+}
+If an image is wrapped in a link
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:60;
+	display:none;
+}
+The slices in the Slider
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:50;
+	height:100%;
+}
+Caption styles
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.1; Overridden by captionOpacity setting
+	width:100%;
+	z-index:89;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+	text-align:center;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+Direction nav styles (e.g. Next & Prev)
+.nivo-directionNav a {
+	position:absolute;
+	top:40%;
+	z-index:99;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+Control nav styles (e.g. 1,2,3...)
+.nivo-controlNav a {
+	position:relative;
+	z-index:99;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}*/
+	
+	
+	
+	

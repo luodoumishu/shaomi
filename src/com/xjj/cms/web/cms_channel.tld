@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>chl</shortname>
+
+
+	<tag>
+		<name>index</name>
+		<tagclass>com.busi.cms.web.tld.channel.ChannelIndexTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+
+
+	<tag>
+		<name>item</name>
+		<tagclass>com.busi.cms.web.tld.channel.ChannelItemTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>chlCode</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>relatedType</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>styleClass</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>styleClassType</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+
+
+	<tag>
+		<name>getObject</name>
+		<tagclass>com.xjj.cms.web.tld.channel.ChannelGetObjectTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+	</tag>
+
+
+	<tag>
+		<name>main</name>
+		<tagclass>com.xjj.cms.web.tld.channel.ChannelMainTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>chlCode</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>pageSize</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>article</name>
+		<tagclass>com.xjj.cms.web.tld.channel.ChannelArticleTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>pageNo</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>skipNo</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>hasImage</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>styleClass</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>newCss</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>titleLength</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>memoLength</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>skipImgNo</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+
+
+	<tag>
+		<name>more</name>
+		<tagclass>com.xjj.cms.web.tld.channel.ChannelMoreTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>moreSource</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+
+
+	<tag>
+		<name>link</name>
+		<tagclass>com.xjj.cms.web.tld.channel.ChannelLinkTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+	</tag>
+
+	<tag>
+		<name>menu</name>
+		<tagclass>com.xjj.cms.web.tld.channel.ChannelMenuTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+	</tag>
+
+	<tag>
+		<name>childChl</name>
+		<tagclass>com.xjj.cms.web.tld.channel.ChannelChildTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+	</tag>
+
+
+	<tag>
+		<name>linkSelect</name>
+		<tagclass>com.xjj.cms.web.tld.channel.ChannelLinkSelectTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+	</tag>
+
+	<tag>
+		<name>vote</name>
+		<tagclass>com.busi.cms.web.tld.channel.ChannelVoteTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>length</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>styleClass</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

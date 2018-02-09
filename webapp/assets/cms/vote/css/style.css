@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{
+	margin:0;
+	padding:0;
+	font-family:"宋体";
+	font-size:12px;
+	background: rgb(245,245,245);
+	}
+img{border:none;}
+.gao_box{
+	margin:10px;
+	}
+.gao_biaot{
+	height:40px;
+	background:url(../images/gao_tabbg.jpg) repeat-x;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	line-height:40px;
+	}
+.gao_tplist{
+	/*margin-top:15px;*/
+	}
+.gao_tpnr{
+	background:#f8f8f8;
+	margin:4px 0;
+	}
+.gao_tpnrtop{
+	height:30px;
+	background:#dee7ec;
+	line-height:30px;
+	padding:0 8px;
+	color:#0a6b9d;
+	}
+.gao_tpnrtop span{
+	float:right;
+	margin:8px;
+	}
+.gao_tpcon{
+	padding:15px 5px 25px 5px;
+	}

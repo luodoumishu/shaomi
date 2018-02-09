@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>ColorDialog（颜色对话框）</title>
+<style type="text/css">
+#demoPanel
+{
+    width:100%;
+    height:2000px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="demoPanel">
+  <p>ColorDialog（颜色对话框） v2.0</p>
+  <p><a href="http://www.cftea.com/products/webComponents/ColorDialog/" target="_blank">http://www.cftea.com/products/webComponents/ColorDialog/</a></p>
+  <p>显示对话框之后，要放弃选择并关闭对话框，在对话框及触发对话框显示的控件以外单击鼠标左键即可。</p>
+  <p>若在使用中出现在空白区域单击鼠标左键，但对话框不消失的情况，请注意，这不属于程序的错误，关于该情况的说明，请参见：<a href="http://www.cftea.com/c/2007/11/T8E0QPE0V0KIN6W9.asp" target="_blank">http://www.cftea.com/c/2007/11/T8E0QPE0V0KIN6W9.asp</a>。</a>
+  <p>示例一、请点击按钮更换页面背景颜色：<input type="button" id="colorButton" value="更换背景颜色" /></p>
+  <p>示例二、请点击文本框获取颜色：<input type="text" size="8" id="colorText" value="#FF0000" readonly="readonly" /></p>
+</div>
+
+<script type="text/javascript" src="ControlInfo.js"></script>
+<script type="text/javascript" src="ColorDialog.js"></script>
+<script type="text/javascript">
+<!--
+//千一网络 www.cftea.com
+
+var colorDialog = new ColorDialog("colorButton");
+colorDialog.onColorSelecting = function () { document.body.style.backgroundColor = colorDialog.selectingColor; }
+colorDialog.onColorSelected = function () { document.body.style.backgroundColor = colorDialog.selectedColor; }
+colorDialog.onColorCancelled = function () { document.body.style.backgroundColor = colorDialog.selectedColor; }
+colorDialog.create();
+
+var colorText = document.getElementById("colorText");
+var colorDialog2 = new ColorDialog(colorText);
+colorDialog2.selectedColor = colorText.value;
+colorDialog2.onColorSelected = function () { colorText.value = colorDialog2.selectedColor; }
+colorDialog2.create();
+//-->
+</script>
+</body>
+
+</html>

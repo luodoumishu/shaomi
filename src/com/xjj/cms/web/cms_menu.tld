@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>menu</shortname> 
+
+
+	<tag>
+		<name>child</name>
+		<tagclass>com.busi.cms.web.tld.menu.MenuChildTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>absChild</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>showLevel</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>				
+		<attribute>
+			<name>pageSize</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>styleClass</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>				
+	</tag>
+
+	<tag>
+		<name>place</name>
+		<tagclass>com.xjj.cms.web.tld.menu.MenuPlaceTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+	
+	</tag>
+
+
+	<tag>
+		<name>articleInSelfAndChildMenu</name>
+		<tagclass>com.xjj.cms.web.tld.menu.MenuArticleInSelfAndChildMenuTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>pageSize</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>titleLength</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>newCss</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>styleClass</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>menuId</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>hasImage</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>fyType</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>		
+		<attribute>
+			<name>cId</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>	
+		<attribute>
+			<name>byCId</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>	
+						
+	</tag>
+
+	<tag>
+		<name>articlePageStr</name>
+		<tagclass>com.xjj.cms.web.tld.menu.MenuArticlePageStrTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+	</tag>
+	<tag>
+		<name>htarticlePageStr</name>
+		<tagclass>com.busi.cms.web.tld.menu.MenuHtArticlePageStrTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+	</tag>
+	<tag>
+		<name>articleContent</name>
+		<tagclass>com.busi.cms.web.tld.menu.MenuArticleContentTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>articleTag</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>	
+	</tag>
+	
+	<tag>
+		<name>loopChild</name>
+		<tagclass>com.xjj.cms.web.tld.menu.MenuLoopChildTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>styleClass</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>styleClassType</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>		
+	</tag>
+
+
+	<tag>
+		<name>articleMore</name>
+		<tagclass>com.busi.cms.web.tld.menu.MenuArticleMoreTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+	</tag>
+	
+	<tag>
+		<name>showName</name>
+		<tagclass>com.busi.cms.web.tld.menu.MenuShowNameTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>showType</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>		
+	</tag>	
+	
+	
+	<tag>
+		<name>loopByChannel</name>
+		<tagclass>com.busi.cms.web.tld.menu.loop.MenuLoopByChannelTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>chlCode</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>styleClass</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>	
+		<attribute>
+			<name>styleClassType</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>					
+	</tag>
+	<tag>
+		<name>articleByChannel</name>
+		<tagclass>com.busi.cms.web.tld.menu.loop.MenuArticleByChannelTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>pageSize</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>titleLength</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>hasImage</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>				
+	</tag>
+	<tag>
+		<name>moreByChannel</name>
+		<tagclass>com.busi.cms.web.tld.menu.loop.MenuMoreByChannelTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+	</tag>
+	<tag>
+		<name>aidByChannel</name>
+		<tagclass>com.busi.cms.web.tld.menu.loop.MenuAidByChannelTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+	</tag>
+	
+	
+	<tag>
+		<name>showAbsChildName</name>
+		<tagclass>com.busi.cms.web.tld.menu.chlid.MenuShowAbsChildNameTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>styleClass</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+
+	
+	
+	<tag>
+		<name>showSp</name>
+		<tagclass>com.busi.cms.web.tld.menu.MenuShowSpTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+	</tag>
+	
+	
+	<tag>
+		<name>showParentName</name>
+		<tagclass>com.busi.cms.web.tld.menu.parent.MenuShowParentNameTld</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<description></description>
+		<attribute>
+			<name>showLevel</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>		
+	</tag>
+
+		
+</taglib>

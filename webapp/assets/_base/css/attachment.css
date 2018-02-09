@@ -1,0 +1,59 @@
+.file-icon
+{
+    display: inline-block;
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-left: 10px;
+    margin-top: 13px;
+}
+
+.img-file { background-image: url(../images/fileicon/jpg.png) }
+.doc-file { background-image: url(../images/fileicon/doc.png) }
+.pdf-file { background-image: url(../images/fileicon/pdf.png) }
+.xls-file { background-image: url(../images/fileicon/xls.png) }
+.zip-file { background-image: url(../images/fileicon/zip.png) }
+.default-file { background-image: url(../images/fileicon/default.png) }
+
+#example .file-heading
+{
+    font-family: Arial;
+    font-size: 1.1em;
+    display: inline-block;
+    float: left;
+    width: 450px;
+    margin: 0 0 0 20px;
+    height: 25px;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+    #example .file-name-heading
+    {
+        font-weight: bold;
+    }
+
+     #example .file-size-heading
+    {
+        font-weight: normal;
+        font-style: italic;
+    }
+
+li.k-file .file-wrapper .k-upload-action
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+li.k-file div.file-wrapper
+{
+    position: relative;
+    height: 75px;
+}
+.k-file-success {
+  color: #228B22;
+}

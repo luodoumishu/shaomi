@@ -1,0 +1,204 @@
+html,body{height:100%;}
+body,div,ul,li,a,img,p,dl,dt,dd,h1,h2,h3,h4,span,strong{margin:0;padding:0}
+ul,li,dl,dt,dd{list-style:none}
+a:link {color: #130c0e; text-decoration:none;} 
+a:visited {color: #130c0e;text-decoration:none;}
+img{border:0;list-style:none}
+body{background-color:#fff;font-size:12px;font-family:”宋体”;color:#666}
+.clear{margin:0;padding:0;font-size:0;clear:both}a{color:#666}
+p{line-height:1.8em}
+h2{font-size:12px}
+
+/*-- IE核心滚动条 --*/
+html,body {
+	scrollbar-face-color:ThreeDFace; 
+	scrollbar-arrow-color:#FFC080;
+	scrollbar-dark-shadow-color:#FFDAB9;
+	scrollbar-base-color:ButtonFace;
+}
+/*-- IE核心滚动条End --*/
+
+/*-- webkit核心滚动条 --*/
+/*---滚动条默认显示样式--*/  
+::-webkit-scrollbar-thumb{   
+    background-color:#018EE8;   
+    height:50px;   
+    outline-offset:-2px;   
+    outline:2px solid #fff;   
+    -webkit-border-radius:4px;   
+    border: 2px solid #fff;   
+}  
+/*---鼠标点击滚动条显示样式--*/  
+::-webkit-scrollbar-thumb:hover{   
+    background-color:#FB4446;   
+    height:50px;   
+    -webkit-border-radius:4px;
+} 
+::-webkit-scrollbar-thumb:active{   
+    height:50px;   
+    background-color:#000;   
+    -webkit-border-radius:4px;   
+}   
+/*---滚动条大小--*/  
+::-webkit-scrollbar{   
+    width:13px;
+    height:13px;
+}  
+/*---滚动框背景样式--*/  
+::-webkit-scrollbar-track-piece{   
+    background-color:#fff;   
+    -webkit-border-radius:0;   
+}
+/*--  webkit核心滚动条End --*/
+
+#form-container
+{
+    line-height: 180%;
+    padding:10px;
+	min-height: 200px; 
+}
+#form-container .edit_table
+{
+    width: 100%;
+    background-color:#ECF7FC;
+}
+#form-container .edit_table td
+{
+    padding: 3px;
+    font-size:12px;
+    word-break: keep-all;
+
+}
+#form-container .edit_table input,#form-container .edit_table select
+{
+    font-size:12px;
+    vertical-align:middle;
+}
+#form-container .edit_table .title
+{
+    text-align: right;
+    background-color:#DBF0FA;
+}
+/*查询宽度*/
+#QueryGrid{ width:auto;}
+/*
+#QueryTabStrip {
+	height:490px;
+}
+*/
+#FilterGrid .k-grid-content{
+	height: 314px;
+}
+
+#OrderGrid .k-grid-content{
+	height: 314px;
+}
+
+#InvoiceDetail .k-grid-content{
+	height: 260px;
+}
+.width60
+{
+    width: 60px;
+}
+.width70
+{
+    width: 70px;
+}
+.width80
+{
+    width: 80px;
+}
+.submit_area
+{
+    width: 100%;
+    text-align: center;
+}
+fieldset legend
+{
+    font-size:14px;
+}
+.status {
+    padding-left: 90px;
+}
+.invalid {
+    color: red;
+}
+.valid {
+    color: green;
+}
+.k-widget.k-tooltip-validation
+{
+    display:block;
+    width:154px;
+}
+#form-container fieldset{border:1px solid #ccc;padding:3px 20px 10px 20px;}
+#form-container legend{font-weight:bold;font-size:90%;color:#666;background:#eee;border:1px solid #ccc;border-bottom-color:#999;border-right-color:#999;padding:4px 8px;}
+/*
+.Search_Layer
+{
+    position:absolute;
+    bottom:10px;
+    height:50px;
+    border:1px solid red;
+}
+*/
+/*重写kendo的css*/
+.k-window-titlebar{
+    background-color:#dbdbde;
+    color: #000;
+}
+
+/* grid里面的按钮太宽了，重写之 */
+.k-grid TBODY .k-button{min-width:50px; padding-left:1px; padding-right:1px;}
+
+.tdRight{text-align:right;	}
+.tdLeft{  text-align:left;}
+.k-textbox-d{    border:none; background-color:#ECF7FC;}
+#grid{    min-height:300px;}
+
+/*快速查询样式*/
+.search_div{margin-top: 5px; line-height: 30px; color: #003f59;background-color: #ffffff;outline: 0;font-size: 100%;font-family: inherit;border: #dbdbde solid 1px;border-bottom: 0;}
+/*重写宽度*/
+.search_div div { padding: 5px;}
+.search_div .even {background-color: #a6afbe;}
+.search_div .k-autocomplete, .search_div .k-combobox, .search_div .k-datepicker, .search_div .k-timepicker, .search_div .k-colorpicker, .search_div .k-numerictextbox, .search_div .k-dropdown, .search_div .k-selectbox, .search_div .k-textbox {width: 90px;}
+.search_div .k-datetimepicker {width:155px;}
+
+/*grid tr鼠标悬浮色  加上这个，让大家看下是否有必要、颜色是否合适*/
+.k-grid-content tr:hover {background-color: #a6afbe;}
+
+.box-section {
+display: inline-block;
+vertical-align: top;
+text-align: left;
+margin: 0 2em;
+padding: 10px;
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+border: 1px solid rgba(255,255,255,0.2);
+-webkit-border-radius: 3px;
+border-radius: 3px;
+background: linear-gradient(to bottom, rgba(0,0,0,0.01) 0%,rgba(0,0,0,0.07) 100%);
+}
+
+/*在Grid内部加底提示, 为什么是33px,因为k-pager-wrap k-grid-pager的高度大概是33px*/
+.bottomTip{position: absolute !important; bottom: 33px; width: 100%; z-index: 3;}
+.bottomTip .bottomTip-content{ padding: 6px 8px; text-align: left; color:red; background-color:rgb(255, 253, 220); border-top:1px solid rgb(240, 214, 125); zoom: 1;}
+.bottomTip .bottomTip-content .close {background-image: url("/Styles/KendoUI/Default/sprite.png");background-position: -32px -16px;width:16px;height:16px;float:right; right:0;top:0;cursor:pointer;}
+
+/*MultiSelectBox.js扩展的样式*/
+.custom-multiselect-popup.k-popup .k-list .k-item{vertical-align:middle}
+.custom-multiselect-popup.k-popup .k-list .k-item input,.custom-multiselect-popup.k-popup .k-list .k-item span{margin:0;padding:0;vertical-align:middle}
+.custom-multiselect-popup.k-popup .k-list .k-item input{margin:3px;margin-left:2px;margin-right:6px}
+.custom-multiselect-popup .k-state-selected,.custom-multiselect-popup .k-list .k-state-selected{background:inherit;border-color:transparent;color:inherit}
+.custom-multiselect-popup .k-list .k-state-hover,.custom-multiselect-popup .k-list .k-state-active{color:#fff;background:#afafa7;background-color:#afafa7;background-image:none;-webkit-box-shadow:none;box-shadow:none}
+.custom-multiselect-selectAll-item.k-item,.custom-multiselect-selectAll-item.k-item.k-state-hover,.custom-multiselect-selectAll-item.k-item.k-state-selected{font-style:italic;font-weight:bold;border-bottom:#e0e0e0 solid 1px;padding-bottom:1px}
+
+
+.table-list {
+	border-collapse: collapse;
+}
+.table-list td {
+	padding: 3px 3px 3px 8px; border: 1px solid rgb(125, 211, 246); color: rgb(0, 63, 89);
+}

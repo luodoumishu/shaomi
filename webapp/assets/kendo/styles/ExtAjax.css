@@ -1,0 +1,9 @@
+﻿.ExtAjax-Waitting {
+	overflow: hidden;
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-image: url('./Images/medium-wait.gif');
+	margin: 0;
+}

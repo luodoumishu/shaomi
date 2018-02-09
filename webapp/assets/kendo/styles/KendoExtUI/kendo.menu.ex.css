@@ -1,0 +1,15 @@
+.k-context-menu
+{
+    max-width: 260px;
+    position: absolute;
+    display: none;
+
+    z-index: 9999;
+}
+
+div.k-menu-vertical > .k-item
+{
+    display: block;
+    float: none;
+    border-width: 0;
+}

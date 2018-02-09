@@ -1,0 +1,69 @@
+.xjj-page-main{
+	padding: 10px; 
+	min-height: 200px;
+}
+
+.xjj-group {
+	margin-right: 2px;
+	margin-left: 2px;
+	padding-left: 0;
+	float: left;
+}
+
+.xjj-l-bar-separator {
+	float: left;
+	height: 18px;
+	border-left: 1px solid #9AC6FF;
+	border-right: 1px solid white;
+	margin: 2px;
+}
+
+.xjj-panel-toolbar, .xjj-tree-toolbar {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	padding-left: 10px;
+	border-bottom: 1px;
+	border-left: 1px;
+	border-right: 1px;
+	border-top: 1px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.xjj-table-detail {
+	margin: auto;
+	width: 100%;
+	margin-top: 1px;
+	border-bottom: solid 1px #a6afbe;
+	border-right: solid 1px #a6afbe;
+}
+
+.xjj-table-detail th {
+	background-color: #F7F7F7;
+    font-size: 12px;
+    height: 32px;
+    padding-right: 6px;
+    text-align: right;
+    border-top: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+
+.xjj-table-detail td {
+    border-top: 1px solid #a6afbe;
+	border-left: 1px solid #a6afbe;
+    font-size: 12px;
+    padding-left: 6px;
+    text-align: left;
+}
+.k-read {
+	  position: relative;
+	  display: inline-block;
+	  width: 12.4em;
+	  overflow: visible;
+	  border-width: 0;
+	  vertical-align: middle;
+	  border:0px;
+      color: #003f59;
+	  background-color: #ffffff;
+    }

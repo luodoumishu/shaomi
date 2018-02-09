@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Full Calendar - Ace Admin</title>
+		<meta name="description" content="with draggable and editable events" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- basic styles -->
+		<link href="../ace/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="../ace/css/bootstrap-responsive.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../ace/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../ace/css/ace.css" />
+		<link rel="stylesheet" href="../_base/css/web.css" />
+	</head>
+<body>
+	<div class="main-container container-fluid">
+		<div class="main-content" style="margin-left: 0px;">
+			<div class="page-content">
+				<div class="row-fluid">
+					<div class="span12">
+						<!-- PAGE CONTENT BEGINS -->
+						<div class="row-fluid">
+							<div class="span6">
+                                <div class="tabbable">
+                                    <!--<div class="widget-toolbar">-->
+                                    <ul class="nav nav-tabs " id="myTab">
+                                            <li class="active" id="liHome">
+                                                <a href="#" data-toggle="tab" onclick="showHome();">全部</a>
+                                            </li>
+                                            <li id="liProfile1">
+                                                <a href="#" data-toggle="tab" onclick="showProfile1();">
+                                                    	待处理
+                                                    <span class="badge badge-success">2</span>
+                                                </a>
+                                            </li>
+                                            <li id="liProfile">
+                                                <a href="#" data-toggle="tab" onclick="showProfile();">
+                                                    	申请中
+                                                    <span class="badge badge-primary">2</span>
+                                                </a>
+                                            </li>
+                                            
+                                        </ul>
+                                        <!--<div class="widget-main padding-12 no-padding-left no-padding-right">-->
+									<div class="tab-content"> <!--padding-4-->
+											<div id="home" class="tab-pane in active">
+												<div class="slim-scroll" data-height="500"><!---->
+                                                    <div class="dd dd-draghandle">
+                                                        <ol class="dd-list">
+                                                            <li class="dd-item dd2-item" data-id="20">
+                                                                <div class="dd-handle dd2-handle">
+                                                                    <i class="normal-icon icon-plane blue bigger-130"></i>
+                                                                    <i class="drag-icon icon-move bigger-125"></i>
+                                                                </div>
+                                                                <div class="dd2-content">
+                                                                  	  参加吹水大会的出差申请
+                                                                    <span class="label arrowed">草稿</span>
+                                                                    <!--<span class="sticker"></span>-->
+                                                                    <div class="pull-right action-buttons">
+                                                                        <a class="blue" href="#">
+                                                                            <i class="icon-pencil bigger-130"></i>
+                                                                        </a>
+
+                                                                        <a class="red" href="#">
+                                                                            <i class="icon-trash bigger-130"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="dd2-content-label">
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-time " title="起止时间：202-27">
+                                                                            2014.02.17-2014.02.25
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-location-arrow " title="出差地点：北京">
+                                                                           	 北京
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="当前进度：3/5">
+                                                                            3/5
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="dd-item dd2-item" data-id="21">
+                                                                <div class="dd-handle dd2-handle">
+                                                                    <i class="normal-icon icon-plane blue bigger-130"></i>
+                                                                    <i class="drag-icon icon-move bigger-125"></i>
+                                                                </div>
+                                                                <div class="dd2-content">
+                                                                    	参加吹水大会的出差申请
+                                                                    <span class="label arrowed">草稿</span>
+                                                                    <!--<span class="sticker"></span>-->
+                                                                    <div class="pull-right action-buttons">
+                                                                        <a class="blue" href="#">
+                                                                            <i class="icon-pencil bigger-130"></i>
+                                                                        </a>
+
+                                                                        <a class="red" href="#">
+                                                                            <i class="icon-trash bigger-130"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="dd2-content-label">
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-time " title="起止时间：202-27">
+                                                                            2014.02.17-2014.02.25
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-location-arrow " title="出差地点：北京">
+                                                                            	北京
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="当前进度：3/5">
+                                                                            3/5
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+
+                                                            <li class="dd-item dd2-item" data-id="22">
+                                                                <div class="dd-handle dd2-handle">
+                                                                    <i class="normal-icon icon-food orange bigger-130"></i>
+
+                                                                    <i class="drag-icon icon-move bigger-125"></i>
+                                                                </div>
+                                                                <div class="dd2-content">
+                                                                    	李某某(办公室) 严格按照用餐标准的公务接待申请
+                                                                    <span class="label label-success arrowed">待您受理</span>
+                                                                    <!--<span class="sticker"></span>-->
+                                                                    <div class="pull-right action-buttons">
+                                                                        <a class="blue" href="#">
+                                                                            <i class="icon-pencil bigger-130"></i>
+                                                                        </a>
+
+                                                                        <a class="red" href="#">
+                                                                            <i class="icon-trash bigger-130"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="dd2-content-label">
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-time " title="起止时间：202-27">
+                                                                            2014.02.17-2014.02.25
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="当前进度：3/5">
+                                                                            3/5
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="附件材料：1个">
+                                                                            1个
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+
+                                                            <li class="dd-item dd2-item" data-id="24">
+                                                                <div class="dd-handle dd2-handle">
+                                                                    <i class="normal-icon icon-coffee green bigger-130"></i>
+
+                                                                    <i class="drag-icon icon-move bigger-125"></i>
+                                                                </div>
+                                                                <div class="dd2-content">
+                                                                    	王某某(经济运行处) 年休假申请
+                                                                    <span class="label label-success arrowed">待您受理</span>
+                                                                    <!--<span class="sticker"></span>-->
+                                                                    <div class="pull-right action-buttons">
+                                                                        <a class="blue" href="#">
+                                                                            <i class="icon-pencil bigger-130"></i>
+                                                                        </a>
+
+                                                                        <a class="red" href="#">
+                                                                            <i class="icon-trash bigger-130"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="dd2-content-label">
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-time " title="起止时间：202-27">
+                                                                            2014.02.17-2014.02.25
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="当前进度：3/5">
+                                                                            3/5
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="附件材料：1个">
+                                                                            1个
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+
+                                                            <li class="dd-item dd2-item" data-id="23">
+                                                                <div class="dd-handle dd2-handle">
+                                                                    <i class="normal-icon icon-money red bigger-130"></i>
+
+                                                                    <i class="drag-icon icon-move bigger-125"></i>
+                                                                </div>
+                                                                <div class="dd2-content">
+                                                                    	绝对不超标的费用报销申请
+                                                                    <span class="label label-info arrowed">申请中</span>
+                                                                    <!--<span class="sticker"></span>-->
+                                                                    <div class="pull-right action-buttons">
+                                                                        <a class="blue" href="#">
+                                                                            <i class="icon-pencil bigger-130"></i>
+                                                                        </a>
+
+                                                                        <a class="red" href="#">
+                                                                            <i class="icon-trash bigger-130"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="dd2-content-label">
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-time " title="起止时间：202-27">
+                                                                            2014.02.17-2014.02.25
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="当前进度：3/5">
+                                                                            3/5
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="附件材料：1个">
+                                                                            1个
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+
+
+                                                            <li class="dd-item dd2-item" data-id="25">
+                                                                <div class="dd-handle dd2-handle">
+                                                                    <i class="normal-icon icon-shopping-cart blue bigger-130"></i>
+
+                                                                    <i class="drag-icon icon-move bigger-125"></i>
+                                                                </div>
+                                                                <div class="dd2-content">
+                                                                  	 办公用品采购申请
+                                                                    <span class="label label-info arrowed">申请中</span>
+                                                                    <!--<span class="sticker"></span>-->
+                                                                    <div class="pull-right action-buttons">
+                                                                        <a class="blue" href="#">
+                                                                            <i class="icon-pencil bigger-130"></i>
+                                                                        </a>
+
+                                                                        <a class="red" href="#">
+                                                                            <i class="icon-trash bigger-130"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="dd2-content-label">
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-time " title="起止时间：202-27">
+                                                                            2014.02.17-2014.02.25
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="当前进度：3/5">
+                                                                            3/5
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="附件材料：1个">
+                                                                            1个
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ol>
+													</div>
+												</div>
+											</div>
+
+											<div id="profile1" class="tab-pane">
+												<div class="slim-scroll" data-height="500">
+                                                    <div class="dd dd-draghandle">
+                                                        <ol class="dd-list">
+                                                            <li class="dd-item dd2-item" data-id="22">
+                                                                <div class="dd-handle dd2-handle">
+                                                                    <i class="normal-icon icon-food orange bigger-130"></i>
+
+                                                                    <i class="drag-icon icon-move bigger-125"></i>
+                                                                </div>
+                                                                <div class="dd2-content">
+                                                                    	李某某(办公室) 严格按照用餐标准的公务接待申请
+                                                                    <span class="label label-success arrowed">待您受理</span>
+                                                                    <!--<span class="sticker"></span>-->
+                                                                    <div class="pull-right action-buttons">
+                                                                        <a class="blue" href="#">
+                                                                            <i class="icon-pencil bigger-130"></i>
+                                                                        </a>
+
+                                                                        <a class="red" href="#">
+                                                                            <i class="icon-trash bigger-130"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="dd2-content-label">
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-time " title="起止时间：202-27">
+                                                                            2014.02.17-2014.02.25
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="当前进度：3/5">
+                                                                            3/5
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="附件材料：1个">
+                                                                            1个
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+
+                                                            <li class="dd-item dd2-item" data-id="24">
+                                                                <div class="dd-handle dd2-handle">
+                                                                    <i class="normal-icon icon-coffee green bigger-130"></i>
+
+                                                                    <i class="drag-icon icon-move bigger-125"></i>
+                                                                </div>
+                                                                <div class="dd2-content">
+                                                                    	王某某(经济运行处) 年休假申请
+                                                                    <span class="label label-success arrowed">待您受理</span>
+                                                                    <!--<span class="sticker"></span>-->
+                                                                    <div class="pull-right action-buttons">
+                                                                        <a class="blue" href="#">
+                                                                            <i class="icon-pencil bigger-130"></i>
+                                                                        </a>
+
+                                                                        <a class="red" href="#">
+                                                                            <i class="icon-trash bigger-130"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="dd2-content-label">
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-time " title="起止时间：202-27">
+                                                                            2014.02.17-2014.02.25
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="当前进度：3/5">
+                                                                            3/5
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="附件材料：1个">
+                                                                            1个
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ol>
+                                                    </div>
+												</div>
+											</div>
+											
+											<div id="profile" class="tab-pane">
+												<div class="slim-scroll" data-height="500">
+                                                    <div class="dd dd-draghandle">
+                                                        <ol class="dd-list">
+                                                        	<li class="dd-item dd2-item" data-id="23">
+                                                                <div class="dd-handle dd2-handle">
+                                                                    <i class="normal-icon icon-money red bigger-130"></i>
+
+                                                                    <i class="drag-icon icon-move bigger-125"></i>
+                                                                </div>
+                                                                <div class="dd2-content">
+                                                                    	绝对不超标的费用报销申请
+                                                                    <span class="label label-info arrowed">申请中</span>
+                                                                    <!--<span class="sticker"></span>-->
+                                                                    <div class="pull-right action-buttons">
+                                                                        <a class="blue" href="#">
+                                                                            <i class="icon-pencil bigger-130"></i>
+                                                                        </a>
+
+                                                                        <a class="red" href="#">
+                                                                            <i class="icon-trash bigger-130"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="dd2-content-label">
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-time " title="起止时间：202-27">
+                                                                            2014.02.17-2014.02.25
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="当前进度：3/5">
+                                                                            3/5
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="附件材料：1个">
+                                                                            1个
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+
+
+                                                            <li class="dd-item dd2-item" data-id="25">
+                                                                <div class="dd-handle dd2-handle">
+                                                                    <i class="normal-icon icon-shopping-cart blue bigger-130"></i>
+
+                                                                    <i class="drag-icon icon-move bigger-125"></i>
+                                                                </div>
+                                                                <div class="dd2-content">
+                                                                  	 办公用品采购申请
+                                                                    <span class="label label-info arrowed">申请中</span>
+                                                                    <!--<span class="sticker"></span>-->
+                                                                    <div class="pull-right action-buttons">
+                                                                        <a class="blue" href="#">
+                                                                            <i class="icon-pencil bigger-130"></i>
+                                                                        </a>
+
+                                                                        <a class="red" href="#">
+                                                                            <i class="icon-trash bigger-130"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="dd2-content-label">
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-time " title="起止时间：202-27">
+                                                                            2014.02.17-2014.02.25
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="当前进度：3/5">
+                                                                            3/5
+                                                                        </a>
+                                                                        <a data-rel="tooltip" class="task-badge tooltip-info no-hover-underline icon icon-th-list " title="附件材料：1个">
+                                                                            1个
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ol>
+                                                    </div>
+												</div>
+											</div>
+										</div>
+								</div>
+							</div>
+							<div class="span6 widget-container-span">
+								<div class="widget-box transparent">
+										<div class="tabbable">
+											<ul class="nav nav-tabs" id="myTab">
+												<li class="active" id="liProfile2">
+													<a href="#" data-toggle="tab" onclick="showProfile2();">最新动态</a>
+												</li>
+
+												<li id="liProfile3">
+													<a href="#" data-toggle="tab" onclick="showProfile3();">近期办结</a>
+												</li>
+												
+											</ul>
+										</div>
+										<div class="tab-content">
+											<div id="profile2" class="tab-pane in active">
+												<div class="slim-scroll" data-height="500">
+													<div class="timeline-container timeline-style2">
+														<span class="timeline-label">
+															<b>2014/02/24</b>
+														</span>
+			
+														<div class="timeline-items">
+															<div class="timeline-item clearfix">
+																<div class="timeline-info">
+																	<span class="timeline-date">14:15</span>
+			
+																	<i class="timeline-indicator btn btn-info no-hover"></i>
+																</div>
+			
+																<div class="widget-box transparent">
+																	<div class="widget-body">
+																		<div class="widget-main no-padding">
+																			<span class="bigger-110">
+																				<a href="#" class="purple bolder">处领导</a>
+																				通过了
+																				<span class="green bolder">事假申请</span>
+																				,事项进入
+																				<a href="#" class="purple bolder">分管领导</a>
+																				审批环节
+																			</span>
+																			<br />
+																		</div>
+																	</div>
+																</div>
+															</div>
+			
+															<div class="timeline-item clearfix">
+																<div class="timeline-info">
+																	<span class="timeline-date">12:30</span>
+			
+																	<i class="timeline-indicator btn btn-info no-hover"></i>
+																</div>
+			
+																<div class="widget-box transparent">
+																	<div class="widget-body">
+																		<div class="widget-main no-padding">
+																			<span class="bigger-110">
+																				<a href="#" class="purple bolder">处领导</a>
+																				通过了
+																				<span class="green bolder">事假申请</span>
+																				,事项进入
+																				<a href="#" class="purple bolder">分管领导</a>
+																				审批环节
+																			</span>
+			
+																			<br />
+																		</div>
+																	</div>
+																</div>
+															</div>
+			
+															<div class="timeline-item clearfix">
+																<div class="timeline-info">
+																	<span class="timeline-date">11:15</span>
+			
+																	<i class="timeline-indicator btn btn-info no-hover"></i>
+																</div>
+			
+																<div class="widget-box transparent">
+																	<div class="widget-body">
+																		<div class="widget-main no-padding">
+																			<span class="bigger-110">
+																				<a href="#" class="purple bolder">处领导</a>
+																				通过了
+																				<span class="green bolder">事假申请</span>
+																				,事项进入
+																				<a href="#" class="purple bolder">分管领导</a>
+																				审批环节
+																			</span>
+			
+																			<br />
+																			
+																			
+																		</div>
+																	</div>
+																</div>
+															</div>
+			
+															<div class="timeline-item clearfix">
+																<div class="timeline-info">
+																	<span class="timeline-date">9:00</span>
+			
+																	<i class="timeline-indicator btn btn-info no-hover"></i>
+																</div>
+			
+																<div class="widget-box transparent">
+																	<div class="widget-body">
+																		<div class="widget-main no-padding">
+																			<span class="bigger-110">
+																				<a href="#" class="purple bolder">处领导</a>
+																				通过了
+																				<span class="green bolder">事假申请</span>
+																				,事项进入
+																				<a href="#" class="purple bolder">分管领导</a>
+																				审批环节
+																			</span>
+			
+																			<br />
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div><!-- /.timeline-items -->
+													</div><!-- /.timeline-container -->
+			
+													<div class="timeline-container timeline-style2">
+														<span class="timeline-label">
+															<b>2014/02/23</b>
+														</span>
+			
+														<div class="timeline-items">
+															<div class="timeline-item clearfix">
+																<div class="timeline-info">
+																	<span class="timeline-date">9:00</span>
+			
+																	<i class="timeline-indicator btn btn-success no-hover"></i>
+																</div>
+			
+																<div class="widget-box transparent">
+																	<div class="widget-body">
+																		<div class="widget-main no-padding">
+																			<span class="bigger-110">
+																				<a href="#" class="purple bolder">处领导</a>
+																				通过了
+																				<span class="green bolder">事假申请</span>
+																				,事项进入
+																				<a href="#" class="purple bolder">分管领导</a>
+																				审批环节
+																			</span>
+			
+																			<br />
+																			
+																			
+																		</div>
+																	</div>
+																</div>
+															</div>
+			
+															<div class="timeline-item clearfix">
+																<div class="timeline-info">
+																	<span class="timeline-date">9:00</span>
+			
+																	<i class="timeline-indicator btn btn-success no-hover"></i>
+																</div>
+			
+																<div class="widget-box transparent">
+																	<div class="widget-body">
+																		<div class="widget-main no-padding">
+																			<span class="bigger-110">
+																				<a href="#" class="purple bolder">处领导</a>
+																				通过了
+																				<span class="green bolder">事假申请</span>
+																				,事项进入
+																				<a href="#" class="purple bolder">分管领导</a>
+																				审批环节
+																			</span>
+			
+																			<br />
+																			
+																			
+																		</div>
+																	</div>
+																</div>
+															</div>
+			
+															<div class="timeline-item clearfix">
+																<div class="timeline-info">
+																	<span class="timeline-date">9:00</span>
+			
+																	<i class="timeline-indicator btn btn-success no-hover"></i>
+																</div>
+			
+																<div class="widget-box transparent">
+																	<div class="widget-body">
+																		<div class="widget-main no-padding">
+																			<span class="bigger-110">
+																				<a href="#" class="purple bolder">处领导</a>
+																				通过了
+																				<span class="green bolder">事假申请</span>
+																				,事项进入
+																				<a href="#" class="purple bolder">分管领导</a>
+																				审批环节
+																			</span>
+			
+																			<br />
+																		</div>
+																	</div>
+																</div>
+															</div>
+			
+															<div class="timeline-item clearfix">
+																<div class="timeline-info">
+																	<span class="timeline-date">9:00</span>
+			
+																	<i class="timeline-indicator btn btn-success no-hover"></i>
+																</div>
+			
+																<div class="widget-box transparent">
+																	<div class="widget-body">
+																		<div class="widget-main no-padding">
+																			<span class="bigger-110">
+																				<a href="#" class="purple bolder">处领导</a>
+																				通过了
+																				<span class="green bolder">事假申请</span>
+																				,事项进入
+																				<a href="#" class="purple bolder">分管领导</a>
+																				审批环节
+																			</span>
+			
+																			<br />
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div><!-- /.timeline-items -->
+													</div><!-- /.timeline-container -->
+			
+													<div class="timeline-container timeline-style2">
+														<span class="timeline-label">
+															<b>2014/02/21</b>
+														</span>
+			
+														<div class="timeline-items">
+															<div class="timeline-item clearfix">
+																<div class="timeline-info">
+																	<span class="timeline-date">9:00</span>
+			
+																	<i class="timeline-indicator btn btn-grey no-hover"></i>
+																</div>
+			
+																<div class="widget-box transparent">
+																	<div class="widget-body">
+																		<div class="widget-main no-padding">
+																			<span class="bigger-110">
+																				<a href="#" class="purple bolder">处领导</a>
+																				通过了
+																				<span class="green bolder">事假申请</span>
+																				,事项进入
+																				<a href="#" class="purple bolder">分管领导</a>
+																				审批环节
+																			</span>
+			
+																			<br />
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="timeline-item clearfix">
+																<div class="timeline-info">
+																	<span class="timeline-date">9:00</span>
+			
+																	<i class="timeline-indicator btn btn-grey no-hover"></i>
+																</div>
+			
+																<div class="widget-box transparent">
+																	<div class="widget-body">
+																		<div class="widget-main no-padding">
+																			<span class="bigger-110">
+																				<a href="#" class="purple bolder">处领导</a>
+																				通过了
+																				<span class="green bolder">事假申请</span>
+																				,事项进入
+																				<a href="#" class="purple bolder">分管领导</a>
+																				审批环节
+																			</span>
+			
+																			<br />
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="timeline-item clearfix">
+																<div class="timeline-info">
+																	<span class="timeline-date">9:00</span>
+			
+																	<i class="timeline-indicator btn btn-grey no-hover"></i>
+																</div>
+			
+																<div class="widget-box transparent">
+																	<div class="widget-body">
+																		<div class="widget-main no-padding">
+																			<span class="bigger-110">
+																				<a href="#" class="purple bolder">处领导</a>
+																				通过了
+																				<span class="green bolder">事假申请</span>
+																				,事项进入
+																				<a href="#" class="purple bolder">分管领导</a>
+																				审批环节
+																			</span>
+			
+																			<br />
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div><!-- /.timeline-items -->
+													</div>
+												</div>
+											</div>
+
+											<div id="profile3" class="tab-pane">
+												<div class="slim-scroll" data-height="500">
+													<div class="dd" id="nestable">
+														<ol class="dd-list">
+															<li class="dd-item" data-id="1">
+																<div class="dd-handle btn-yellow no-hover">
+																		<span class="lighter grey">
+																			年休假申请
+																		</span>
+																		<div class="pull-right action-buttons">
+																			<i class="normal-icon icon-time pink bigger-130"></i>
+																			2014/02/10-2014/02/11
+																			
+																		<span class="badge badge-success">通过</span>
+																		
+																	</div>
+																</div>
+															</li>
+															<li class="dd-item" data-id="1">
+																<div class="dd-handle btn-yellow no-hover">
+																		<span class="lighter grey">
+																			年休假申请
+																		</span>
+																		<div class="pull-right action-buttons">
+																			<i class="normal-icon icon-time pink bigger-130"></i>
+																			2014/02/10-2014/02/11
+																			
+																		<span class="badge badge-important">驳回</span>
+																	</div>
+																</div>
+															</li>
+															<li class="dd-item" data-id="1">
+																<div class="dd-handle btn-yellow no-hover">
+																		<span class="lighter grey">
+																			年休假申请
+																		</span>
+																		<div class="pull-right action-buttons">
+																			<i class="normal-icon icon-time pink bigger-130"></i>
+																			2014/02/10-2014/02/11
+																			
+																		<span class="badge badge-important">撤销</span>
+																	</div>
+																</div>
+															</li>
+														</ol>
+													</div>
+												</div>
+											</div>
+										</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- /.span -->
+				</div><!-- /.row-fluid -->
+			</div><!-- /.page-content -->
+		</div><!-- /.main-content -->
+	</div><!-- /.main-container -->
+	
+	
+	<script src="../ace/js/ace-extra.min.js"></script>
+	<script src="../ace/js/jquery-1.9.1.min.js"></script>
+	<script src="../ace/js/bootstrap.min.js"></script>
+	<script src="../ace/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="../ace/js/jquery.slimscroll.min.js"></script>
+	<script src="../ace/js/jquery.mobile.custom.min.js"></script>
+	<script src="../ace/js/jquery.nestable.min.js"></script>
+	<script src="../ace/js/ace-elements.min.js"></script>
+	
+	<script type="text/javascript">
+		 jQuery(function($) {
+		 	$('.slim-scroll').each(function () {
+				var $this = $(this);
+				$this.slimScroll({
+					height: $this.data('height') || 100,
+					railVisible:true
+				});
+			});
+
+             $('.dd').nestable();
+
+             $('.dd-handle a').on('mousedown', function(e){
+                 console.log('mousedown');
+                 e.stopPropagation();
+             });
+
+             $('[data-rel="tooltip"]').tooltip();
+			
+			// Portlets (boxes)
+			//移动class=widget-container-span的div
+		    /* $('.widget-container-span').sortable({
+		        connectWith: '.widget-container-span',
+				items:'> .widget-box',
+				opacity:0.8,
+				revert:true,
+				forceHelperSize:true,
+				placeholder: 'widget-placeholder',
+				forcePlaceholderSize:true,
+				tolerance:'pointer'
+		    }); */
+		}); 
+		function showHome(){
+			$("#profile1").attr("class","tab-pane");
+			$("#profile").attr("class","tab-pane");
+			$("#home").attr("class","tab-pane in active");
+			$("#liProfile").attr("class","");
+			$("#liHome").attr("class","active");
+			$("#liProfile1").attr("class","");
+		}
+		function showProfile(){
+			$("#profile1").attr("class","tab-pane");
+			$("#profile").attr("class","tab-pane in active");
+			$("#home").attr("class","tab-pane");
+			$("#liProfile").attr("class","active");
+			$("#liHome").attr("class","");
+			$("#liProfile1").attr("class","");
+		}
+		function showProfile1(){
+			$("#profile1").attr("class","tab-pane in active");
+			$("#profile").attr("class","tab-pane");
+			$("#home").attr("class","tab-pane ");
+			$("#liProfile").attr("class","");
+			$("#liHome").attr("class","");
+			$("#liProfile1").attr("class","active");
+		}
+		function showProfile2(){
+			$("#profile2").attr("class","tab-pane in active");
+			$("#profile3").attr("class","tab-pane");
+			$("#liProfile3").attr("class","");
+			$("#liProfile2").attr("class","active");
+		}
+		function showProfile3(){
+			$("#profile3").attr("class","tab-pane in active");
+			$("#profile2").attr("class","tab-pane");
+			$("#liProfile2").attr("class","");
+			$("#liProfile3").attr("class","active");
+		}
+		function deleteItem(textObject){
+			var $inputText = $(textObject);
+			var $li = $inputText.closest('li');
+			$li.hide();
+		}
+		
+	</script>
+</body>
+</html>
